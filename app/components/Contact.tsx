@@ -2,7 +2,7 @@ export function Contact() {
   const links = [
     { label: "Email", value: "danieloladele@gmail.com", href: "mailto:danieloladele@gmail.com" },
     { label: "LinkedIn", value: "in/danieloladele", href: "https://www.linkedin.com/in/danieloladele/" },
-    { label: "GitHub", value: "@danieloladele", href: "https://github.com/danieloladele" },
+    { label: "GitHub", value: "@yungdarniel", href: "https://github.com/yungdarniel" },
     { label: "Location", value: "Lagos, Nigeria · GMT+1", href: null },
   ];
 
