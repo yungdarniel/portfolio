@@ -1,8 +1,20 @@
 export function Contact() {
   const links = [
-    { label: "Email", value: "danieloladele@gmail.com", href: "mailto:danieloladele@gmail.com" },
-    { label: "LinkedIn", value: "in/danieloladele", href: "https://www.linkedin.com/in/danieloladele/" },
-    { label: "GitHub", value: "@yungdarniel", href: "https://github.com/yungdarniel" },
+    {
+      label: "Email",
+      value: "danieloladele@gmail.com",
+      href: "mailto:danieloladele@gmail.com",
+    },
+    {
+      label: "LinkedIn",
+      value: "in/danieloladele",
+      href: "https://www.linkedin.com/in/danieloladele/",
+    },
+    {
+      label: "GitHub",
+      value: "@yungdarniel",
+      href: "https://github.com/yungdarniel",
+    },
     { label: "Location", value: "Lagos, Nigeria · GMT+1", href: null },
   ];
 
@@ -16,15 +28,15 @@ export function Contact() {
       </div>
 
       <div className="relative max-w-3xl mx-auto text-center">
-        <div className="font-mono text-xs tracking-wider uppercase text-[var(--accent)] mb-3">
-          // let&apos;s build something
+        <div className="font-mono text-xs tracking-wider uppercase text-[var(--muted)] mb-3">
+          // contact
         </div>
         <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight mb-5">
-          Have a workflow worth automating?
+          Let&apos;s work together.
         </h2>
         <p className="text-[var(--muted)] text-lg mb-10 max-w-xl mx-auto">
-          I take on a small number of engagements per quarter. If you have a
-          process bleeding hours or dollars, let&apos;s talk.
+          Open to AI engineering roles and meaningful collaborations. The
+          fastest way to reach me is by email.
         </p>
 
         <a

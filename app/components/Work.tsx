@@ -7,16 +7,15 @@ export function Work() {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
           <div>
-            <div className="font-mono text-xs tracking-wider uppercase text-[var(--accent)] mb-2">
-              // selected work
+            <div className="font-mono text-xs tracking-wider uppercase text-[var(--muted)] mb-2">
+              // work
             </div>
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-              Production systems, not side projects.
+              Selected projects
             </h2>
             <p className="mt-3 text-[var(--muted)] max-w-2xl">
-              Each of these runs in production today — shipping autonomous
-              decisions, reports, and actions across finance, HR, and growth
-              workflows.
+              Agentic and RPA systems shipped across finance, HR, and growth —
+              with measurable outcomes attached to each.
             </p>
           </div>
           <div className="font-mono text-xs text-[var(--muted)]">
