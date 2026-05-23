@@ -1,3 +1,5 @@
+import { ContactForm } from "./ContactForm";
+
 export function Contact() {
   const links = [
     {
@@ -39,13 +41,22 @@ export function Contact() {
           fastest way to reach me is by email.
         </p>
 
-        <a
-          href="mailto:danieloladele@gmail.com"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--accent)] text-black font-medium hover:bg-[var(--accent)]/90 transition-colors mb-12"
-        >
-          danieloladele@gmail.com
-          <span aria-hidden>→</span>
-        </a>
+        <div className="mb-10">
+          <ContactForm />
+        </div>
+
+        <div className="flex flex-col items-center gap-3 mb-12">
+          <div className="font-mono text-[10px] tracking-wider uppercase text-[var(--muted)]">
+            // or just email
+          </div>
+          <a
+            href="mailto:danieloladele@gmail.com"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/[0.12] hover:border-[var(--accent)]/40 hover:bg-white/[0.02] text-foreground font-medium transition-colors"
+          >
+            danieloladele@gmail.com
+            <span aria-hidden>→</span>
+          </a>
+        </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/[0.06] border border-white/[0.06] rounded-2xl overflow-hidden text-left">
           {links.map((link) => (
