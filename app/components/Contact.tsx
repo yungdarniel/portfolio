@@ -36,20 +36,13 @@ export function Contact() {
         <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight mb-5">
           Let&apos;s work together.
         </h2>
-        <p className="text-[var(--muted)] text-lg mb-8 max-w-xl mx-auto">
-          Open to AI engineering roles and meaningful collaborations. Drop a
-          note in the contact panel — or use any direct channel below.
+        <p className="text-[var(--muted)] text-lg mb-10 max-w-xl mx-auto">
+          Open to AI automation roles and meaningful collaborations. Open the
+          contact panel for a quick brief — or reach me on any channel below.
         </p>
 
-        <div className="flex items-center justify-center gap-3 flex-wrap mb-12">
+        <div className="flex items-center justify-center mb-14">
           <ContactCTAButton />
-          <a
-            href="mailto:danieloladele@gmail.com"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/[0.12] hover:border-[var(--accent)]/40 hover:bg-white/[0.02] text-foreground font-medium transition-colors"
-          >
-            danieloladele@gmail.com
-            <span aria-hidden>→</span>
-          </a>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/[0.06] border border-white/[0.06] rounded-2xl overflow-hidden text-left">
@@ -67,12 +60,18 @@ export function Contact() {
                       ? "noopener noreferrer"
                       : undefined
                   }
-                  className="text-sm hover:text-[var(--accent)] transition-colors break-all"
+                  className="block text-sm hover:text-[var(--accent)] transition-colors truncate"
+                  title={link.value}
                 >
                   {link.value}
                 </a>
               ) : (
-                <div className="text-sm text-foreground">{link.value}</div>
+                <div
+                  className="block text-sm text-foreground truncate"
+                  title={link.value}
+                >
+                  {link.value}
+                </div>
               )}
             </div>
           ))}

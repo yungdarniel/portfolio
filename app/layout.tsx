@@ -14,14 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daniel Oladele — AI Automation Engineer",
+  title: "Daniel Oladele — AI Automation Specialist",
   description:
-    "AI Automation Engineer specializing in agentic systems, RPA, and workflow orchestration. Shipped 8+ autonomous agents across finance, HR, and marketing.",
+    "AI Automation Specialist building agentic systems, RPA, and workflow orchestration. Shipped 8+ autonomous agents across finance, HR, and marketing.",
   metadataBase: new URL("https://danieloladele.dev"),
   openGraph: {
-    title: "Daniel Oladele — AI Automation Engineer",
+    title: "Daniel Oladele — AI Automation Specialist",
     description:
-      "AI Automation Engineer specializing in agentic systems, RPA, and workflow orchestration.",
+      "AI Automation Specialist building agentic systems, RPA, and workflow orchestration.",
     type: "website",
   },
 };

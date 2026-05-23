@@ -1,17 +1,26 @@
+import Image from "next/image";
+
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/[0.06]">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-30 backdrop-blur-md bg-black/40 border-b border-white/[0.06]">
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 rounded-md bg-gradient-to-br from-[var(--accent)] to-[var(--violet)] flex items-center justify-center font-mono text-xs font-semibold text-black">
-            DO
+          <div className="relative h-9 w-9 rounded-full overflow-hidden border border-white/10 bg-gradient-to-br from-[var(--accent)]/40 via-transparent to-[var(--violet)]/30">
+            <Image
+              src="/avatar.png"
+              alt="Daniel Oladele"
+              width={36}
+              height={36}
+              priority
+              className="h-full w-full object-cover"
+            />
           </div>
           <div className="hidden sm:flex flex-col leading-none">
             <span className="text-sm font-medium text-foreground">
               Daniel Oladele
             </span>
             <span className="text-[10px] text-[var(--muted)] mt-1 tracking-wide">
-              AI Automation Engineer
+              AI Automation Specialist
             </span>
           </div>
         </a>
