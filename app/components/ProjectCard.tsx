@@ -1,13 +1,18 @@
 import type { Project } from "../lib/projects";
+import { ProjectGallery } from "./ProjectGallery";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="group relative rounded-2xl border border-white/[0.08] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[var(--accent)]/30 transition-all duration-300 overflow-hidden">
+    <article className="group relative rounded-2xl border border-white/[0.08] bg-white/[0.02] hover:bg-white/[0.04] hover:border-[var(--accent)]/30 transition-all duration-300 overflow-hidden flex flex-col">
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
         <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-[var(--accent)]/10 blur-3xl" />
       </div>
 
-      <div className="relative p-6 sm:p-7 flex flex-col h-full">
+      {project.images && project.images.length > 0 && (
+        <ProjectGallery images={project.images} projectName={project.name} />
+      )}
+
+      <div className="relative p-6 sm:p-7 flex flex-col flex-1">
         <div className="flex items-center justify-between mb-4">
           <span className="font-mono text-[10px] tracking-wider uppercase text-[var(--muted)] px-2 py-0.5 rounded-full border border-white/10">
             {project.domain}
