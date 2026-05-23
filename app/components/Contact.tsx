@@ -1,4 +1,4 @@
-import { ContactForm } from "./ContactForm";
+import { ContactCTAButton } from "./ContactCTAButton";
 
 export function Contact() {
   const links = [
@@ -36,19 +36,13 @@ export function Contact() {
         <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight mb-5">
           Let&apos;s work together.
         </h2>
-        <p className="text-[var(--muted)] text-lg mb-10 max-w-xl mx-auto">
-          Open to AI engineering roles and meaningful collaborations. The
-          fastest way to reach me is by email.
+        <p className="text-[var(--muted)] text-lg mb-8 max-w-xl mx-auto">
+          Open to AI engineering roles and meaningful collaborations. Drop a
+          note in the contact panel — or use any direct channel below.
         </p>
 
-        <div className="mb-10">
-          <ContactForm />
-        </div>
-
-        <div className="flex flex-col items-center gap-3 mb-12">
-          <div className="font-mono text-[10px] tracking-wider uppercase text-[var(--muted)]">
-            // or just email
-          </div>
+        <div className="flex items-center justify-center gap-3 flex-wrap mb-12">
+          <ContactCTAButton />
           <a
             href="mailto:danieloladele@gmail.com"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/[0.12] hover:border-[var(--accent)]/40 hover:bg-white/[0.02] text-foreground font-medium transition-colors"
