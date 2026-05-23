@@ -32,9 +32,19 @@ export const projects: Project[] = [
     status: "Live demo",
     images: [
       {
-        src: "/projects/onboarding-os/portal-dashboard.png",
-        alt: "Onboarding portal dashboard showing progress bar, checklist, quick access links, engineering team panel",
-        caption: "New-hire portal · Day 4 view",
+        src: "/projects/onboarding-os/hr-manager-dashboard.png",
+        alt: "HR Manager dashboard listing active candidates with progress, drive folders, and view-portal links",
+        caption: "HR Manager · load-balanced candidate queue",
+      },
+      {
+        src: "/projects/onboarding-os/welcome-email.png",
+        alt: "Welcome email branded for the new hire with portal link, Telegram onboarding bot, drive folder, and manager + buddy contacts",
+        caption: "Day-zero welcome email",
+      },
+      {
+        src: "/projects/onboarding-os/portal-with-assistant.png",
+        alt: "New-hire portal with checklist and the AI onboarding assistant open answering payroll and office questions",
+        caption: "New-hire portal + AI assistant",
       },
     ],
   },
