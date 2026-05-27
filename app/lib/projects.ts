@@ -20,6 +20,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "competitor-death-star",
+    name: "Competitor Death Star",
+    tagline: "Daily competitor intel with recommended plays",
+    description:
+      "Daily pipeline that ingests competitor signals — pricing-page diffs, ATS job postings, news, and Hacker News — synthesizes them with Claude Haiku into a severity-scored brief, and delivers it to Slack plus a public dashboard. Each brief ends with 5 specific recommended plays tied back to source signal UUIDs.",
+    impact: "Daily intel that's already a play, not a data dump",
+    stack: ["n8n", "Supabase", "Claude Haiku", "Next.js", "Slack"],
+    domain: "Marketing",
+    liveUrl: "https://dashboard-beryl-two.vercel.app",
+    repoUrl: "https://github.com/yungdarniel/competitor-death-star",
+    status: "Live demo",
+  },
+  {
     slug: "onboarding-os",
     name: "Onboarding OS",
     tagline: "End-to-end new-hire automation",
