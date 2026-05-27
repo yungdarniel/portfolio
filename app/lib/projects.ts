@@ -31,6 +31,33 @@ export const projects: Project[] = [
     liveUrl: "https://dashboard-beryl-two.vercel.app",
     repoUrl: "https://github.com/yungdarniel/competitor-death-star",
     status: "Live demo",
+    images: [
+      {
+        src: "/projects/competitor-death-star/slack-daily-brief.png",
+        alt: "Slack #daily-brief channel showing the synthesized competitor brief with ClickUp layoffs lede, competitor landscape, and recommended plays",
+        caption: "Daily brief delivered to Slack",
+      },
+      {
+        src: "/projects/competitor-death-star/dashboard-landscape.png",
+        alt: "Dashboard severity-scored competitor landscape cards for ClickUp, Asana, Notion, Linear with recommended plays section",
+        caption: "Dashboard · severity-scored landscape",
+      },
+      {
+        src: "/projects/competitor-death-star/n8n-collect-hn.png",
+        alt: "n8n collector workflow fetching Hacker News and Google News results, mapping them to signals, and tolerant-inserting into Supabase",
+        caption: "Collector pipeline · HN + News → signals",
+      },
+      {
+        src: "/projects/competitor-death-star/n8n-collect-pricing.png",
+        alt: "n8n pricing-page collector using Firecrawl scrape and hash-diff against prior snapshot to emit a price_change signal only on flip",
+        caption: "Pricing-page diff · Firecrawl + hash flip",
+      },
+      {
+        src: "/projects/competitor-death-star/n8n-deliver-slack.png",
+        alt: "n8n delivery workflow reading the latest brief, formatting Slack Block Kit, and posting to the Incoming Webhook",
+        caption: "Slack delivery · Block Kit formatter",
+      },
+    ],
   },
   {
     slug: "onboarding-os",
