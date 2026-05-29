@@ -20,6 +20,78 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "onboarding-os",
+    name: "Onboarding OS",
+    tagline: "End-to-end new-hire automation",
+    description:
+      "Self-serve portal that auto-provisions new hires, chases required documents, and surfaces settle-in info on demand. Collapses HR's per-hire admin from days to minutes.",
+    impact: "Per-hire HR admin: days → minutes",
+    stack: ["n8n", "Supabase", "Next.js", "OpenAI"],
+    domain: "HR",
+    liveUrl: "https://onboarding-portal-ecru.vercel.app",
+    status: "Live demo",
+    images: [
+      {
+        src: "/projects/onboarding-os/hr-manager-dashboard.png",
+        alt: "HR Manager dashboard listing active candidates with progress, drive folders, and view-portal links",
+        caption: "HR Manager · load-balanced candidate queue",
+      },
+      {
+        src: "/projects/onboarding-os/welcome-email.png",
+        alt: "Welcome email branded for the new hire with portal link, Telegram onboarding bot, drive folder, and manager + buddy contacts",
+        caption: "Day-zero welcome email",
+      },
+      {
+        src: "/projects/onboarding-os/portal-with-assistant.png",
+        alt: "New-hire portal with checklist and the AI onboarding assistant open answering payroll and office questions",
+        caption: "New-hire portal + AI assistant",
+      },
+    ],
+  },
+  {
+    slug: "ai-exec-dashboard",
+    name: "AI Executive Dashboard",
+    tagline: "CEO's AI Chief of Staff — daily brief, alerts, weekly intel",
+    description:
+      "Four-engine intelligence layer that turns CRM noise into morning clarity. Claude Haiku reads HubSpot deals overnight and writes a 200-word pipeline briefing, fires Slack alerts when deals slip past close dates, and synthesises Serper-scraped industry signals into a weekly competitor digest. The AI doesn't just summarise — it notices patterns and flags them unprompted.",
+    impact: "Replaces 80% of a £60k analyst for ~£100/month",
+    stack: ["HubSpot", "Make.com", "Claude Haiku", "Google Sheets", "Slack", "Serper.dev"],
+    domain: "Operations",
+    status: "Live demo",
+    images: [
+      {
+        src: "/projects/ai-exec-dashboard/dashboard-mock.png",
+        alt: "Live KPI dashboard showing total active pipeline £418,500, active deals 25, closed won this week £38,000, pipeline by stage bar chart, deals by source donut, and at-risk overdue deals table",
+        caption: "Live KPI dashboard · refreshes every 15 min",
+      },
+      {
+        src: "/projects/ai-exec-dashboard/morning-briefing-email.png",
+        alt: "7am morning briefing email with pipeline pulse £531,500 across 24 active deals, recent wins, recent losses, at-risk overdue deals, and closing-this-week sections — signed Your AI Chief of Staff",
+        caption: "7am morning briefing · Gmail",
+      },
+      {
+        src: "/projects/ai-exec-dashboard/slack-pipeline-alert.png",
+        alt: "Slack #pipeline-alerts channel showing 🚨 5 deals past close date £46,000 at risk with most overdue list (Lumen FinTech 31 days, Aurora Energy 25 days, Quill Publishing 23 days) and concrete action recommendation",
+        caption: "Hourly pipeline alert · Slack",
+      },
+      {
+        src: "/projects/ai-exec-dashboard/competitor-pulse-email.png",
+        alt: "Weekly competitor pulse email with three industry stories that matter (B2B buying in AI search, Google Preferred Sources, RevOps shops doubling down), the emerging pattern, what it means for the business, and this week's action",
+        caption: "Weekly competitor pulse · Gmail",
+      },
+      {
+        src: "/projects/ai-exec-dashboard/slack-daily-brief.png",
+        alt: "Slack #daily-brief channel showing the morning briefing translated from HTML to Slack mrkdwn with bold deal names, win/loss summaries, and overdue deal callouts",
+        caption: "Same briefing · Slack mrkdwn",
+      },
+      {
+        src: "/projects/ai-exec-dashboard/make-briefing-scenario.png",
+        alt: "Make.com scenario Phase 3 — AI Morning Briefing canvas showing the polished pipeline: Read all deals → Flatten deals to text → Write HTML briefing → Branch to Email + Slack → Send HTML email to CEO and Convert HTML to Slack mrkdwn → Post to #daily-brief",
+        caption: "Briefing pipeline · Make.com canvas",
+      },
+    ],
+  },
+  {
     slug: "competitor-death-star",
     name: "Competitor Death Star",
     tagline: "Daily competitor intel with recommended plays",
@@ -56,35 +128,6 @@ export const projects: Project[] = [
         src: "/projects/competitor-death-star/n8n-deliver-slack.png",
         alt: "n8n delivery workflow reading the latest brief, formatting Slack Block Kit, and posting to the Incoming Webhook",
         caption: "Slack delivery · Block Kit formatter",
-      },
-    ],
-  },
-  {
-    slug: "onboarding-os",
-    name: "Onboarding OS",
-    tagline: "End-to-end new-hire automation",
-    description:
-      "Self-serve portal that auto-provisions new hires, chases required documents, and surfaces settle-in info on demand. Collapses HR's per-hire admin from days to minutes.",
-    impact: "Per-hire HR admin: days → minutes",
-    stack: ["n8n", "Supabase", "Next.js", "OpenAI"],
-    domain: "HR",
-    liveUrl: "https://onboarding-portal-ecru.vercel.app",
-    status: "Live demo",
-    images: [
-      {
-        src: "/projects/onboarding-os/hr-manager-dashboard.png",
-        alt: "HR Manager dashboard listing active candidates with progress, drive folders, and view-portal links",
-        caption: "HR Manager · load-balanced candidate queue",
-      },
-      {
-        src: "/projects/onboarding-os/welcome-email.png",
-        alt: "Welcome email branded for the new hire with portal link, Telegram onboarding bot, drive folder, and manager + buddy contacts",
-        caption: "Day-zero welcome email",
-      },
-      {
-        src: "/projects/onboarding-os/portal-with-assistant.png",
-        alt: "New-hire portal with checklist and the AI onboarding assistant open answering payroll and office questions",
-        caption: "New-hire portal + AI assistant",
       },
     ],
   },
